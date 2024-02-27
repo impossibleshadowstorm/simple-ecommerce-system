@@ -100,9 +100,6 @@ export default function ShoppingItemCard(props) {
             ${currencyFormat(price)}
             <ShoppingCartIcon
               className="h-6 w-6 ml-2"
-              // onClick={() => {
-              //   handleCartAdd;
-              // }}
             />
           </button>
         </div>

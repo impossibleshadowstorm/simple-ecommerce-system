@@ -25,7 +25,7 @@ const Page = () => {
         <div className="div bg-[#1D232A] flex rounded-2xl">
           <div className="img w-[230px] h-[304px] relative">
             <Image
-              src={`https://picsum.photos/seed/title/200/350`}
+              src={`https://picsum.photos/seed/${item?.item?.title}/200/350`}
               alt="book"
               fill
               className="rounded-l-2xl"
