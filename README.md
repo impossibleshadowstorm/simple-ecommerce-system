@@ -47,7 +47,7 @@ Welcome to the E-Commerce System! This system is built to provide a seamless sho
    npm run dev
    ```
 
-## Frontend (Node.js)
+## Frontend (Next.js)
 
 1. Navigate to the frontend directory:
 2. Add .env file
