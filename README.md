@@ -17,7 +17,7 @@ Welcome to the E-Commerce System! This system is built to provide a seamless sho
 
 ## Installation
 
-### Running with Docker
+# Running with Docker
 
 1. Make sure you have Docker and Docker Compose installed on your machine.
 
