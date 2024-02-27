@@ -1,0 +1,32 @@
+version: "3"
+
+volumes:
+  frontend:
+  backend:
+
+services:
+  frontend:
+    environment:
+      WATCHPACK_POLLING: "true"
+    env_file:
+      - ./frontend/.env
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./frontend/:/app/
+    ports:
+      - "3000:3000"
+
+  backend:
+    build:
+      dockerfile: Dockerfile
+      context: backend
+    container_name: backend
+    ports:
+      - 8001:8001
+    restart: always
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./backend/:/backend/
