@@ -34,7 +34,7 @@ This is a sample e-commerce application built with [React](https://reactjs.org/)
    npm run dev
    ```
 
-## Backend (Node.js)
+## Frontend (Node.js)
 
 1. Navigate to the frontend directory:
 2. Add .env file
