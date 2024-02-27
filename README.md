@@ -1,6 +1,19 @@
-# Sample E-commerce Application
+# E-Commerce System
 
-This is a sample e-commerce application built with [React](https://reactjs.org/) for the frontend and [Node.js](https://nodejs.org/) for the backend.
+Welcome to the E-Commerce System! This system is built to provide a seamless shopping experience for users while ensuring security and reliability. Below you'll find information on how to set up and use the system.
+
+## Features
+
+- Frontend built with Next.js for improved performance and SEO.
+- State management using Redux Toolkit for predictable state management.
+- Thunk middleware for asynchronous logic in Redux.
+- Redux Persist for persisting Redux state in local storage.
+- Backend powered by Express for robust server-side logic.
+- CORS enabled for secure communication between frontend and backend.
+- XSS protection implemented to prevent cross-site scripting attacks.
+- Rate limiting to mitigate brute force and denial of service attacks.
+- MongoDB used as the database for efficient data storage and retrieval.
+- JWT authentication system ensures secure user authentication and authorization.
 
 ## Installation
 
