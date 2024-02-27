@@ -83,7 +83,7 @@ const Page = () => {
                     className="btn btn-sm join-item text-[#adadba] cursor-pointer"
                     onClick={(e) => {
                       e.preventDefault();
-                      console.log(item?.item?._id)
+                      console.log(item?.item?._id);
                       dispatch(deleteFromCart(item?.item?._id));
                     }}
                   >
@@ -143,8 +143,17 @@ const Page = () => {
           })}
 
           {cartItems?.items?.length > 0 ? (
-            <div className="flex justify-end gap-4">
-              <div className="btn-purchase hover:bg-green-200 bg-green-300 px-3 py-2 rounded-md text-[#002b3d]">
+            <div className="flex flex-col justify-center items-end gap-4 mr-4 mt-8">
+              <div className="flex w-[15%] justify-between text-green-300 font-semibold text-md">
+                <span className="">Total: </span>
+                {cartItems?.items?.reduce((prev, item) => {
+                  const qty = item?.count;
+                  const unitPrice = parseFloat(item?.item?.price);
+                  const total = qty * unitPrice;
+                  return prev + total;
+                }, 0)}
+              </div>
+              <div className="btn-purchase hover:bg-green-200 bg-green-300 px-3 py-2 rounded-md text-[#002b3d] w-fit">
                 <button
                   className="btn btn-sm btn-info text-sm font-medium"
                   onClick={handleCheckout}
