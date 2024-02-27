@@ -126,6 +126,7 @@ const deleteBook = async (req, res) => {
     params: { id: bookId },
   } = req;
 
+  console.log(role);
   if (role !== "owner") {
     throw new UnauthenticatedError(
       "Your Role is not sufficient for this action."

@@ -27,7 +27,8 @@ This is a sample e-commerce application built with [React](https://reactjs.org/)
 ## Backend (Node.js)
 
 1. Navigate to the backend directory:
-2. Install dependencies:
+2. Add .env file with PORT, JWT_LIFETIME, MONGO_URI, JWT_SECRET
+3. Install dependencies:
    ```bash
    npm i
    npm run dev
@@ -36,7 +37,8 @@ This is a sample e-commerce application built with [React](https://reactjs.org/)
 ## Backend (Node.js)
 
 1. Navigate to the frontend directory:
-2. Install dependencies:
+2. Add .env file
+3. Install dependencies:
    ```bash
    yarn
    yarn dev
