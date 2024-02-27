@@ -14,7 +14,9 @@ import { useSnackbar } from "notistack";
 import ProtectedRoute from "@/utils/protected-route";
 
 const Page = () => {
-  const cartItems = useSelector((state) => state?.cartReducer);
+  const cartItems = useSelector((state) => {
+    return state?.cart;
+  });
   const { enqueueSnackbar } = useSnackbar();
 
   const renderSingleProduct = (item, index) => {

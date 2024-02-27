@@ -12,7 +12,7 @@ import { useSelector } from "react-redux";
 
 const Header = (props) => {
   const { enqueueSnackbar } = useSnackbar();
-  const cartItems = useSelector((state) => state?.cartReducer);
+  const cartItems = useSelector((state) => state?.cart);
 
   // const role = localStorage.getItem("role");
 
