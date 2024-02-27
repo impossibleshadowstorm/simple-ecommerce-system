@@ -8,7 +8,7 @@ const {
 
 // /route Controllers
 const getAllUsers = async (req, res) => {
-  if (req.user.role === "admin") {
+  if (req.user.role === "owner") {
     try {
       let sortCriteria = {};
 
@@ -95,7 +95,7 @@ const deleteUser = async (req, res) => {
     params: { id: userId },
   } = req;
 
-  if (role !== "admin") {
+  if (role !== "owner") {
     throw new UnauthenticatedError(
       "Your Role is not sufficient for this action."
     );
