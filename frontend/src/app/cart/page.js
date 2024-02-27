@@ -11,13 +11,13 @@ import {
   deleteFromCart,
 } from "@/lib/features/cart-actions";
 import { useSnackbar } from "notistack";
+import ProtectedRoute from "@/utils/protected-route";
 
 const Page = () => {
   const cartItems = useSelector((state) => state?.cartReducer);
   const { enqueueSnackbar } = useSnackbar();
 
   const renderSingleProduct = (item, index) => {
-    console.log(item);
     return (
       <div key={index} className="shadow-xl flex flex-col gap-4 py-4">
         <div className="div bg-[#1D232A] flex rounded-2xl">
@@ -83,6 +83,7 @@ const Page = () => {
                     className="btn btn-sm join-item text-[#adadba] cursor-pointer"
                     onClick={(e) => {
                       e.preventDefault();
+                      console.log(item?.item?._id)
                       dispatch(deleteFromCart(item?.item?._id));
                     }}
                   >
@@ -163,4 +164,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default ProtectedRoute(Page);
