@@ -1,6 +1,5 @@
 "use client";
-import CommonLayout from "@/layout";
-import NextLink from "next/link";
+import CommonLayout from "@layout";
 import Head from "next/head";
 import React from "react";
 import Image from "next/image";
@@ -9,9 +8,9 @@ import {
   addToCart,
   checkoutCart,
   deleteFromCart,
-} from "@/lib/features/cart-actions";
+} from "@lib/features/cart-actions";
 import { useSnackbar } from "notistack";
-import ProtectedRoute from "@/utils/protected-route";
+import ProtectedRoute from "@utils/protected-route";
 
 const Page = () => {
   const cartItems = useSelector((state) => {
