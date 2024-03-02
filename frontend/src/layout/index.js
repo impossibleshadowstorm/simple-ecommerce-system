@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "@layout/header";
+import Header from "@/layout/header";
 
 export default function CommonLayout(props) {
   const { headerProps, children } = props;

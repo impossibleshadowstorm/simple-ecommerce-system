@@ -1,5 +1,5 @@
 import React from "react";
-import ShoppingItemCard from "@components/shopping-item-card";
+import ShoppingItemCard from "@/components/shopping-item-card";
 
 export default function BookList(props) {
   const { booksList, error, isLoading } = props;
