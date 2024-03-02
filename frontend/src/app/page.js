@@ -4,7 +4,7 @@ import Head from "next/head";
 import CommonLayout from "@layout";
 import BookList from "@components/shopping-item-card-list";
 import ProtectedRoute from "@utils/protected-route";
-import { useGetAllBooksQuery } from "@lib/services/books-api";
+import { useGetAllBooksQuery } from "@redux/services/books-api";
 
 const Home = () => {
   const [filters, setFilters] = useState("all");

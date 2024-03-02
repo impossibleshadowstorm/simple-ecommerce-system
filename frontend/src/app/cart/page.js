@@ -8,7 +8,7 @@ import {
   addToCart,
   checkoutCart,
   deleteFromCart,
-} from "@lib/features/cart-actions";
+} from "@redux/features/cart-actions";
 import { useSnackbar } from "notistack";
 import ProtectedRoute from "@utils/protected-route";
 

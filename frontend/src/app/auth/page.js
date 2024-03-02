@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import {
   useLoginUserMutation,
   useRegisterUserMutation,
-} from "@lib/services/auth-api";
+} from "@redux/services/auth-api";
 import { useSnackbar } from "notistack";
 import { redirect, useRouter } from "next/navigation";
 

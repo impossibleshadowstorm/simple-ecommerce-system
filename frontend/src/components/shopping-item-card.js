@@ -5,7 +5,7 @@ import { useSnackbar } from "notistack";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { currencyFormat } from "@common/utils";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "@lib/features/cart-actions";
+import { addToCart } from "@redux/features/cart-actions";
 
 export default function ShoppingItemCard(props) {
   const { id, title, type, price, author, rating, sku } = props;
