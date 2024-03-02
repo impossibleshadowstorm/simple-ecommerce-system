@@ -1,15 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        remotePatterns: [
-          {
-            protocol: 'https',
-            hostname: 'picsum.photos',
-            // port: '',
-            // pathname: '/account123/**',
-          },
-        ],
+  env: {
+    BACKEND_URL: process.env.NEXT_PUBLIC_BACKEND_URL,
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
       },
+    ],
+  },
 };
 
 export default nextConfig;
